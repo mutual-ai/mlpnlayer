@@ -22,7 +22,7 @@
 % % OF SUCH DAMAGE.
 
 function [W,E] = trainingMLP(neurons,a,bias,x,yref,lr,error,maxIt)
-%% Multilayer Perceptron Training.
+%% n-Layer Multilayer Perceptron Training.
 
 % neurons = 1 X layers.
 % a = momentum constant.
