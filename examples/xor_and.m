@@ -1,3 +1,5 @@
+%% Learning XOR and AND logical operation
+
 % Configuration
 neurons = [3 4 2];
 a = 0.001;
