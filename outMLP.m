@@ -22,7 +22,7 @@
 % % OF SUCH DAMAGE.
 
 function [O] = outMLP(neurons,bias,input,w)
-%% Multilayer Perceptron Output.
+%% n-Layer Multilayer Perceptron Output.
 
 % bias(layer) = 1 X layers.
 % input = 1 X inputs.
