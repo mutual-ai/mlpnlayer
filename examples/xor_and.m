@@ -25,4 +25,4 @@ disp('Input [1 1]');
 outMLP(neurons,bias,[1 1],W)
 
 % Plot MSE
-plot(mse_hist)
+semilogx(mse_hist)
