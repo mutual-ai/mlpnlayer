@@ -133,7 +133,7 @@ while (mse > error && counter < maxIt)
         WtGs = wnext'*Gs';
         % Derivative of the activation function
         df = (y.*(1-y));
-        % Local gradient. Hidden layers: df * sum of (last layer G * last layer weights)
+        % Local gradient. Hidden layers: df * sum of (next layer G * next layer weights)
         Gs = df.*WtGs(2:end,:)';
         % Copy out of previous layer from memory of outs.
         ypre = ym(k-1,1:neurons(k-1));
@@ -162,7 +162,7 @@ while (mse > error && counter < maxIt)
     WtGs = wnext'*Gs';
     % Derivative of the activation function
     df = (y.*(1-y));
-    % Local gradient. Hidden layers: df * sum of (last layer G * last layer weights)
+    % Local gradient. Hidden layers: df * sum of (next layer G * next layer weights)
     Gs = df.*WtGs(2:end,:)';
     clear w;
     clear wPast;
